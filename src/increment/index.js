@@ -44,8 +44,12 @@ const IncrementLetter = (props) => {
           {messages.title}
         </p>
         <p style={{ paddingLeft: "12px" }}>
-          Dear {formData.empName ? formData.empName : "[Employee Name]"} -{" "}
-          {formData.designation ? formData.designation : "[Designation]"},
+          Dear{" "}
+          <span style={{ fontWeight: "bold" }}>
+            {formData.empName ? formData.empName : "[Employee Name]"} -{" "}
+            {formData.designation ? formData.designation : "[Designation]"}
+          </span>
+          ,
         </p>
         <p style={{ paddingLeft: "12px" }}>
           Consequent to the review of your performance, we are pleased to inform
@@ -73,12 +77,24 @@ const IncrementLetter = (props) => {
         </p>
         <p style={{ paddingLeft: "12px" }}>Best Wishes,</p>
       </div>
-      <div style={{ float: "left", margin: "50px 0px 0px 20px" }}>
+      <div
+        style={{
+          float: "left",
+          margin: "50px 0px 0px 20px",
+          fontWeight: "bold",
+        }}
+      >
         <p style={{ paddingLeft: "12px" }}>For XpressoGroup</p>
         <p style={{ paddingLeft: "12px" }}>{formData.hrName}</p>
         <p style={{ paddingLeft: "12px" }}>Manager - Human Resources</p>
       </div>
-      <div style={{ float: "right", margin: "50px 0px 0px 20px" }}>
+      <div
+        style={{
+          float: "right",
+          margin: "50px 0px 0px 20px",
+          fontWeight: "bold",
+        }}
+      >
         <p style={{ paddingLeft: "12px" }}>HR Signature</p>
         <p style={{ paddingLeft: "12px" }}></p>
         <p style={{ paddingLeft: "12px" }}></p>
