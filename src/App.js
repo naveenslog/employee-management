@@ -4,7 +4,7 @@ import Increment from "./increment";
 
 export default function App() {
   return (
-    <div className="App" ref={ref}>
+    <div className="App">
       <Increment />
     </div>
   );
