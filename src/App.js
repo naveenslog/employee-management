@@ -10,8 +10,7 @@ export default function App() {
       id: 1,
       tabTitle: "Relieving Letter",
       title: "Relieving Letter",
-      content: <OfferLetter />,
-      // content: <RelievingLetter />,
+      content: <RelievingLetter />,
     },
     {
       id: 2,
